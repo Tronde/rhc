@@ -296,7 +296,7 @@ use the system host name.</li>
 Based Inventory (HBI).</li>
 </ul>
 <div class="sourceCode" id="cb18"><pre
-class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">rhc_inights</span><span class="kw">:</span></span>
+class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">rhc_insights</span><span class="kw">:</span></span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">baseurl</span><span class="kw">:</span><span class="at"> </span><span class="st">&quot;cert-api.access.redhat.com:443/r/insights&quot;</span></span></code></pre></div>
 <p>Configures the Base URL for the Insights API. Defaults to
 "cert-api.access.redhat.com:443/r/insights".</p>
@@ -323,7 +323,7 @@ class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb20-1"><a href=
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">commands</span><span class="kw">:</span><span class="at"> </span><span class="kw">[]</span></span>
 <span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">files</span><span class="kw">:</span><span class="at"> </span><span class="kw">[]</span></span>
 <span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">components</span><span class="kw">:</span><span class="at"> </span><span class="kw">[]</span></span></code></pre></div>
-<p>Specify lists of commands, files, and components to obmit from
+<p>Specify lists of commands, files, and components to omit from
 output</p>
 <div class="sourceCode" id="cb21"><pre
 class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">rhc_insights</span><span class="kw">:</span></span>
@@ -336,9 +336,9 @@ class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb21-1"><a href=
 <span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">patterns</span><span class="kw">:</span><span class="at"> </span><span class="kw">[]</span></span>
 <span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a><span class="at">        </span><span class="fu">regex_patterns</span><span class="kw">:</span><span class="at"> </span><span class="kw">[]</span></span></code></pre></div>
 <p>These are optional. Specify lists of commands, files, components,
-keywords and patterns to obmit from output. NOTE: You cannot mix plain
-string matching and regular expression matching. For more informaition
-on this topic read: <a
+keywords and patterns to omit from output. NOTE: You cannot mix plain
+string matching and regular expression matching. For more information on
+this topic read: <a
 href="https://access.redhat.com/articles/4511681">YAML-style denylist
 configuration for Red Hat Insights Client</a>.</p>
 <div class="sourceCode" id="cb22"><pre
@@ -350,12 +350,12 @@ INFO, WARNING, ERROR, CRITICAL.</p>
 class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">rhc_insights</span><span class="kw">:</span></span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">obfuscate</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span></code></pre></div>
 <p>Configures IP address obfuscation; valid values are
-<code>false</code> (the default), and <code>false</code>.</p>
+<code>false</code> (the default), and <code>true</code>.</p>
 <div class="sourceCode" id="cb24"><pre
 class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">rhc_insights</span><span class="kw">:</span></span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a><span class="at">      </span><span class="fu">obfuscate_hostname</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span></span></code></pre></div>
 <p>Configures hostname obfuscation; valid values are <code>false</code>
-(the default), and <code>false</code>. Requires
+(the default), and <code>true</code>. Requires
 <code>obfuscate: true</code>.</p>
 <div class="sourceCode" id="cb25"><pre
 class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">rhc_insights</span><span class="kw">:</span></span>
